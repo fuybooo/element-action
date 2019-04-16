@@ -1,0 +1,35 @@
+.el-form-item .el-form-item__content {
+    position: relative;
+}
+.is-error .el-input .el-input__inner {
+    background-color: #FFDEDE;
+}
+.el-form-item__error {
+    position: absolute;
+    padding: 8px!important;
+    border: 1px solid #ee4433;
+    background-color: #FFDEDE;
+    border-radius: 2px;
+    color: #000!important;
+    font-size: 12px;
+    line-height: 1;
+    top: auto!important;
+    margin-top: 7px;
+    right: 0;
+    left: auto!important;
+}
+.el-form-item__error::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #FFDEDE;
+    top: -5px;
+    right: 30px;
+    border: 1px solid #ee4433;
+    transform: rotate(45deg);
+    border-right: 0;
+    border-bottom: 0;
+    z-index: 1;
+}
